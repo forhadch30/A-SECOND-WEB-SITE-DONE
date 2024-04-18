@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- TAILWIND CUSTOM COLOR -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'c-t': '#F8F7F0',
+                        "b-t": '#4BAF47',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- GOOGEL FONT ROBOTO  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+    <style>
+        .roboto-bold-italic {
+            font-family: 'Roboto';
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div
+                class="navbar border-b border-[#FFFFFF1A] fixed z-10 bg-opacity-40 bg-base-400 text-white lg:space-x-14">
+                <img src="imagess/Link - logo → logo@2x-white-1.webp.png" alt="">
+                <div class="space-x-4 hidden md:flex md:mx-auto">
+                    <i class="fa-brands bg-[#FFFFFF1A] py-2 px-2 rounded-full fa-twitter"></i>
+                    <i class="fa-brands bg-[#FFFFFF1A] py-2 px-2 rounded-full fa-facebook"></i>
+                    <i class="fa-brands bg-[#FFFFFF1A] py-2 px-2 rounded-full fa-pinterest"></i>
+                    <i class="fa-brands bg-[#FFFFFF1A] py-2 px-2 rounded-full fa-instagram"></i>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu-horizontal gap-4 px-1">
+                        <div class="flex gap-2">
+                            <li><a class="text-x font-bold">Home</a></li>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-2 mt-2 h-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                        </div>
+                        <li><a class="text-x font-bold">About</a></li>
+                        <div class="flex gap-2">
+                            <li><a class="text-x font-bold">Services</a></li>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-2 mt-2 h-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                        </div>
+                        <div class="flex gap-2">
+                            <li><a class="text-x font-bold">Projects</a></li>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-2 mt-2 h-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                        </div>
+                        <div class="flex gap-2">
+                            <li><a class="text-x font-bold">News</a></li>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-2 mt-2 h-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                        </div>
+                        <div class="flex gap-2">
+                            <li><a class="text-x font-bold">Shop</a></li>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-2 mt-2 h-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                        </div>
+                        <li><a class="text-x font-bold">Contact</a></li>
+                    </ul>
+                    <div class="mt-6 ml-20 flex  gap-4">
+                        <div>
+                            <i class="fa-solid border-l px-4 fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                            <i
+                                class="fa-solid text-[#EEC044] border-2 border-[#EEC044] rounded-full px-2 py-2 ml-2 fa-phone-volume"></i>
+                        </div>
+                        <div>
+                            <h2>Call Anytime</h2>
+                            <p class="">+ 98 (000) - 9630</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-end">
+                    <div class="dropdown dropdown-left">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu bg-black menu-sm dropdown-content mt-12 z-[1] w-32 shadow bg-base-100 rounded-box">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Projects</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img class="h-[300px]  md:h-full" src="imagess/div.elementor-repeater-item-8f878b7.png" alt="">
+                <div class="absolute text-center lg:px-[25%] md:px-4 text-white top-[40%] space-y-2 flex items-center">
+                    <img class="w-10" src="imagess/elements (1).png" alt="">
+                    <p class="lg:text-6xl md:text-3xl font-bold lg:font-bold">Natural Products For Lovers of <span
+                            class="text-[#EEC044]">Healthy</span> Organic Food
+                    <p>
+                        <img class="md:w-12 " src="imagess/elements (1).png" alt="">
+                </div>
+                <img class="absolute lg:left-[50%]  top-[58%] md:right-[34%] lg:top-[58%] right-6"
+                    src="imagess/Heading 1 → decor-line.webp.png" alt="">
+                <button
+                    class="bg-[#4BAF47] py-2 px-4 absolute top-[75%] md:left-[40%] left-20 lg:left-[45%] text-white lg:top-[75%] rounded">Discover
+                    More</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Get to know us -->
+        <section style="background-image: url(imagess/Frame\ 3384402.png);">
+            <div class="grid grid-cols-1 lg:mt-20 mt-4 gap-5 lg:gap-10 p-2 md:flex max-w-5xl mx-auto">
+                <div class="space-y-6">
+                    <h2 class="text-xl font-bold italic text-[#e6bd4e]">Get to know us</h2>
+                    <p class="lg:text-4xl text-xl font-bold md:w-[400px]">Leader in Agriculture Market</p>
+                    <p class="text-[#878680] w-full md:w-[90%] lg:w-[480px]">There are many variations of passages of
+                        Lorem Ipsum available
+                        majority have suffered alteration in some form, by injected humour,
+                        or randomised words which don’t look even slightly believable.</p>
+                    <div class="flex flex-col md:flex-row gap-5 lg:items-center">
+                        <div>
+                            <p class="text-[#4BAF47] italic">Modern agriculture types</p>
+                            <p class="text-[#878680] w-[220px]">We're here for you from start to finish</p>
+                        </div>
+                        <img src="imagess/video-image.webp.png" alt="">
+                    </div>
+                    <button class="bg-green-600 text-white py-2 px-4 rounded">Discover More<button>
+                </div>
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-4 relative">
+                    <img class="w-full" src="imagess/image-01-1.webp.png" alt="">
+                    <p class="text-green-500 italic top-[90%] absolute">PARTNERS IN WORLD WIDE</p>
+                    <img class="w-full" src="imagess/image-02-1.webp.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Our Services -->
+        <section style="background-image: url(imagess/wheats.webp.png);"
+            class="mt-10 p-2 bg-no-repeat bg-bottom  bg-[#F8F7F0] lg:p-14">
+            <div class="text-center mb-7">
+                <h3 class="text-[#EEC044] italic text-lg">Our Services</h3>
+                <p class="text-4xl font-bold">What We Offer</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl mx-auto lg:grid-cols-3">
+                <div class="w-[300px] relative">
+                    <img src="imagess/service-05.webp.png" alt="">
+                    <img class="absolute w-14 right-5 top-44" src="imagess/div.master-icon.png" alt="">
+                    <div class="w-[300px] p-5 bg-white rounded-lg shadow-2xl">
+                        <h3 class="text-xl font-bold mb-4">Agriculture Products</h3>
+                        <p>Lorem ipsum is simply free available. Aenean leo quam. Pellentesque semornare vestibulum.</p>
+                    </div>
+                </div>
+                <div class="w-[300px] relative">
+                    <img src="imagess/service-06.webp.png" alt="">
+                    <img class="absolute w-14 right-5 top-44" src="imagess/div.master-icon (1).png" alt="">
+                    <div class="w-[300px] p-5 bg-white rounded-lg shadow-2xl">
+                        <h3 class="text-xl font-bold mb-4">Agriculture Products</h3>
+                        <p>Lorem ipsum is simply free available. Aenean leo quam. Pellentesque semornare vestibulum.</p>
+                    </div>
+                </div>
+                <div class="w-[300px] relative">
+                    <img src="imagess/service-07.webp.png" alt="">
+                    <img class="absolute w-14 right-5 top-44" src="imagess/div.master-icon (2).png" alt="">
+                    <div class="w-[300px] p-5 bg-white rounded-lg shadow-2xl">
+                        <h3 class="text-xl font-bold mb-4">Agriculture Products</h3>
+                        <p>Lorem ipsum is simply free available. Aenean leo quam. Pellentesque semornare vestibulum.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Frequently Asked Questions -->
+        <section class="max-w-5xl mx-auto">
+            <div class="md:flex gird grid-cols-2 p-2 items-center gap-10">
+                <div class="lg:w-1/2">
+                    <img class="lg:w-[400px] w-full" src="imagess/Frame 3384405.png" alt="">
+                    <div class="relative lg:ml-[40%]">
+                        <img class="lg:w-[280px] mt-2  lg:-mt-[140%] rounded-xl" src="imagess/image-03.webp.png" alt="">
+                        <div
+                            class="bg-[#EEC044] absolute lg:top-[234px] lg:left-20 left-16 md:left-6 md:top-[100%] -mt-[72px] lg:mt-0 text-white px-2 text-center py-2 rounded-t-xl">
+                            <h2>Call us anytime</h2>
+                            <p class="text-2xl font-bold">666 888 0000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 space-y-5">
+                    <h2 class="text-[#EEC044] text-xl">Frequently Asked Questions</h2>
+                    <p class="lg:text-4xl text-2xl font-bold">You've Any Questions</p>
+                    <div class="relative">
+                        <p class="bg-[#F8F7F0] py-2 rounded lg:px-2 lg:text-xl px-1 lg:font-bold mb-2">World’s hottest
+                            destinations
+                            for
+                            vegans</p>
+                        <i class="fa-solid absolute lg:right-4 right-1 top-4 fa-envelope"></i>
+                    </div>
+                    <div class="relative">
+                        <p class="bg-[#F8F7F0] py-2 rounded lg:px-2 lg:text-xl px-1 font-bold">Let’s grow naturaly and
+                            live
+                            naturaly
+                        </p>
+                        <i class="fa-regular absolute lg:right-4 right-1 top-4 fa-envelope"></i>
+                    </div>
+                    <p class="text-[#878680]">Suspendisse finibus urna mauris, vitae consequat quam vel. Vestibulum leo
+                        ligula, molestie ullamcorper vulputate vitae sodales commodo nisl. Nulla
+                        facilisi. Pellentesque est metus many of some form.</p>
+                    <div class="relative rounded">
+                        <p class="bg-[#F8F7F0] py-2 lg:text-xl font-bold lg:px-2 px-1">Best vegetables for your healthy
+                            hair</p>
+                        <i class="fa-regular absolute lg:right-4 right-1 top-4 fa-message"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Recent Work -->
+        <section class="max-w-5xl mx-auto lg:mt-32 mt-4 p-2">
+            <div class="md:flex grid grid-cols-1  md:justify-between">
+                <div class="lg:w-[300px]">
+                    <h3 class="text-[#EEC044] italic">Our Recent Work</h3>
+                    <p class="lg:text-3xl text-xl font-bold">Recently Completed Projects</p>
+                </div>
+                <div class="lg:w-[500px] text-sm md:w-[500px] text-[#878680]">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit penatibsenectus,
+                    sem mus etiam pharetra lacus ac tortor vitae, amet tincidunt congue fusce
+                    ridiculus cubilia ad feugiat fames placerat
+                </div>
+            </div>
+        </section>
+        <!-- Built the best -->
+        <section class="max-w-5xl mx-auto mt-6">
+            <div class="flex flex-col md:flex-row justify-between lg:items-center">
+                <div class="bg-[#49A760] text-white py-10 p-2 lg:w-[450px] lg:p-5">
+                    <h3 class="lg:text-3xl text-x font-bold">Built the best agriculture market</h3>
+                    <p class="lg:w-[450px] w-[300px] text-sm mt-4">Give lady of they such they sure it. Me contained
+                        explained my
+                        education. Vulgar as hearts by garret. Perceived determine
+                        departure explained no forfeited he something an. Contrasted
+                        dissimilar get joy you instrument out reasonably. Again keeps at no
+                        meant stuff. To perpetual do existence northward as difficult.</p>
+                </div>
+                <div class="mt-4">
+                    <img class="w-[300px]" src="imagess/13.png.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- IMAGESS SECTION -->
+        <section>
+            <div>
+
+            </div>
+        </section>
+        <!-- Team Members -->
+        <section class="mt-10 max-w-5xl mx-auto p-2">
+            <div class="text-center">
+                <h3 class="text-[#EEC044] italic">Team Members</h3>
+                <p class="text-3xl font-bold">Meet Our Farmers</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mt-10">
+                <div class="relative">
+                    <img class="rounded-lg lg:w-[280px]" src="imagess/Link - avatar → team-01.webp.png" alt="">
+                    <div
+                        class="bg-white lg:left-[34%] left-20 top-[250px] shadow-2xl absolute px-8 rounded  text-center">
+                        <h3 class="text-xl font-bold">Kevin Smith</h3>
+                        <p class="text-[#878680]">Farmer</p>
+                    </div>
+                    <img class="bg-green-600 rounded w-10 absolute top-[257px] left-14 lg:left-[28%]"
+                        src="imagess/Icon (6).png" alt="">
+                </div>
+                <div class="relative">
+                    <img class="rounded-lg  lg:w-[280px]" src="imagess/Link - avatar → team-02.webp.png" alt="">
+                    <div
+                        class="bg-white lg:left-[34%] left-20 top-[250px] shadow-2xl absolute px-8 rounded  text-center">
+                        <h3 class="text-xl font-bold">Jessica Brown</h3>
+                        <p class="text-[#878680]">Farmer</p>
+                    </div>
+                    <img class="bg-green-600 rounded w-10 absolute top-[257px] left-14 lg:left-[28%]"
+                        src="imagess/Icon (6).png" alt="">
+                </div>
+                <div class="relative">
+                    <img class="rounded-lg  lg:w-[280px]" src="imagess/Link - avatar → team-03.webp.png" alt="">
+                    <div
+                        class="bg-white lg:left-[34%] left-20 top-[250px] shadow-2xl absolute px-8 rounded  text-center">
+                        <h3 class="text-xl font-bold">David Martin</h3>
+                        <p class="text-[#878680]">Farmer</p>
+                    </div>
+                    <img class="bg-green-600 rounded w-10 absolute top-[257px] left-14 lg:left-[28%]"
+                        src="imagess/Icon (6).png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- FIXED IMAGESS -->
+        <section>
+            <div>
+                <img class="lg:h-[450px]" src="imagess/Frame 3384410.png" alt="">
+            </div>
+        </section>
+        <!-- From the Blog -->
+        <section class="text-center max-w-5xl mx-auto mt-10 p-2">
+            <div>
+                <h2 class="text-[#EEC044] italic mb-2">From the Blog</h2>
+                <p class="text-2xl font-bold mb-4">News & Articles</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 lg:grid-cols-3">
+                    <img class="lg:w-[350px] w-full md:h-[480px] lg:h-[433px]" src="imagess/div.master-news.png" alt="">
+                    <img class="lg:w-[350px] w-full h-full" src="imagess/div.master-news (1).png" alt="">
+                    <img class="lg:w-[350px] w-full h-full" src="imagess/div.master-news (2).png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Write a Message -->
+        <section class="max-w-5xl mx-auto">
+            <div class="flex flex-col md:flex-row h-[400px]">
+                <div>
+                    <img class="lg:w-[450px] h-[400px]"
+                        src="imagess/Iframe - London Eye, London, United Kingdom → StaticMapService.GetMapImage.png"
+                        alt="">
+                </div>
+                <div class="space-y-5  bg-[#a6a6a6] p-10 lg:w-[550px] rounded-e lg:p-10">
+                    <div>
+                        <h2 class="text-[#EEC044] italic">Contact us</h2>
+                        <p class="text-3xl font-bold mb-2">Write a Message</p>
+                        <input type="email" name="" placeholder="Name" class="py-2 text-[#878680] px-4 mb-2 border rounded"
+                            id="">
+                        <input type="email" name="" placeholder="Email Address "
+                            class="py-2 text-[#878680] px-4 border rounded" id="">
+                    </div>
+                    <input type="email" name="" placeholder="Write a Message"
+                        class="py-10 text-[#878680] lg:w-[433px] px-4 border rounded" id="">
+                </div>
+            </div>
+        </section>
+        <!-- 5 IMAGESS SECTION -->
+        <section class="bg-yellow-600 lg:mt-10 md:mt-0 mt-[114%]">
+            <div class="md:flex grid grid-cols-3 gap-2 lg:py-10 lg:pl-48 md:pl-5">
+                <img class="w-24  md:w-[18%]" src="imagess/partner-06.webp.png" alt="">
+                <img class="w-24  md:w-[18%]" src="imagess/partner-07.webp.png" alt="">
+                <img class="w-24  md:w-[18%]" src="imagess/partner-08.webp.png" alt="">
+                <img class="w-24  md:w-[18%]" src="imagess/partner-09.webp.png" alt="">
+                <img class="w-24  md:w-[18%]" src="imagess/partner-10.webp.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer class="bg-[#24231D] text-white">
+        <div class=" max-w-5xl mx-auto  p-5 lg:p-10 grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4 ">
+            <div>
+                <img src="imagess/Link - logo → logo@2x-white-1.webp.png" alt="">
+                <p class="mt-4 text-[#A5A49A]">There are many variations of passages
+                    of lorem ipsum available, but the
+                    majority suffered.</p>
+                <div class="space-x-2">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div>
+                <p class="text-xl font-bold border-b-2 w-10 border-[#4BAF47] py-2">Explore</p>
+                <div class="flex gap-3 mt-4 items-center">
+                    <img src="imagess/pa (6).png" alt="">
+                    <a class="text-[#A5A49A] hover:underline">About</a>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <img src="imagess/pa (6).png" alt="">
+                    <a class="text-[#A5A49A]">Services</a>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <img src="imagess/pa (6).png" alt="">
+                    <a class="text-[#A5A49A] hover:underline">Our Projects</a>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <img src="imagess/pa (6).png" alt="">
+                    <a class="text-[#A5A49A] hover:underline">Meet the Farmers</a>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <img src="imagess/pa (6).png" alt="">
+                    <a class="text-[#A5A49A] hover:underline">Latest News</a>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <img src="imagess/pa (6).png" alt="">
+                    <a class="text-[#A5A49A] hover:underline">Contact</a>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold border-b-2 w-10 border-[#4BAF47] py-2">News</h2>
+                <p class="mt-4">Bringing Food Production Back To Cities</p>
+                <p class="text-[#EEC044]">July 5, 2022</p>
+                <p class="mt-5">The Future of Farming, Smart Irrigation Solutions</p>
+                <p class="text-[#EEC044]">July 5, 2022</p>
+            </div>
+            <div class="space-y-3">
+                <h3 class="text-xl font-bold border-b-2 w-10 border-[#4BAF47] py-2">Contact</h3>
+                <div class="flex gap-2 items-center">
+                    <i class="fa-solid text-[#EEC044] fa-phone"></i>
+                    <p class="text-[#A5A49A]">666 888 0000</p>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <i class="fa-solid text-[#EEC044] fa-envelope"></i>
+                    <p class="text-[#A5A49A]">needhelp@company.com</p>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <i class="fa-solid text-[#EEC044] fa-location-crosshairs"></i>
+                    <p class="text-[#A5A49A]">80 broklyn golden street line New York, USA</p>
+                </div>
+                <input type="email" placeholder="Your Email Address" name="forhad" class="py-2 bg-white rounded-l px-2"
+                    id="">
+                <i class="fa-solid text-white bg-[#4BAF47] absolute py-3 px-3 rounded-e fa-location-arrow"></i>
+            </div>
+        </div>
+        <div class="bg-[#1F1E17]">
+            <div class="flex flex-col md:flex-row gap-2 p-2 justify-between max-w-5xl mx-auto mt-10 py-4">
+                <p class="text-[#A5A49A]">© All Copyright 2024 by shawonetc Themes</p>
+                <div class="flex gap-2 ">
+                    <p class="text-[#A5A49A] border-e-2 border-[#A5A49A] px-2">Terms of Use</p>
+                    <p class="text-[#A5A49A]">Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
